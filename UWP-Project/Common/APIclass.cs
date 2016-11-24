@@ -9,7 +9,16 @@ namespace UWP_Project.Common
     public class APIclass //make public as we will be implementing the APL key + link 
     {
         //API Link and Key 
-        public static string Link = "http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}";
-        public static string Key = "5cd8eff4bbf4bb6f393a6b8c101a45d2";
+        public static string Link = "http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}";//might have to fix
+        public static string Key = "5cd8eff4bbf4bb6f393a6b8c101a45d2"; //allows people to access without giving out the password
+
+        public static string APIAccess(string latitude, string longitude)
+        {
+            //represesnt many characters and helps runtime by using the same mutable objects for manipulations 
+            StringBuilder builder = new StringBuilder(Link);
+            builder.AppendFormat("?lat={0}&lon={1}&APPID={2}&units=metric", latitude, longitude, Key); //taken from the above link,processing a composite format string
+            //return value 
+            return builder.ToString();
+        }
     }
 }
