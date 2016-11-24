@@ -1,0 +1,1 @@
+c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\UWP-Project.csproj;x86
