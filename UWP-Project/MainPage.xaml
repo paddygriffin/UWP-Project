@@ -8,6 +8,41 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Background="#e4ef07">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="28" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Orientation="Vertical">
+
+                <TextBlock x:Name="txtCity"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="30"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:Name="txtLastUpdate"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="14"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+
+            <ProgressBar x:Name="progressRing"
+                          Grid.Row="1"
+                          IsIndeterminate="True"
+                          Width="50" Height="50"
+                          Foreground="White"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          />
+
+        </Grid>
 
     </Grid>
 </Page>

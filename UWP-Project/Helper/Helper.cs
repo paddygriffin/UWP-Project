@@ -17,7 +17,9 @@ namespace UWP_Project.Helper
         {
             //httpRequest 
             /*using (HttpClient client = new HttpClient())
-            using (HttpResponseMessage response = await client.GetAsync(page)) ;*/
+            using (HttpResponseMessage response = await client.GetAsync(page)) ;
+            
+             */
             using (var httpClient = new HttpClient())
             {
                 var response = await httpClient.GetAsync(Common.APIclass.APIAccess(latitude, longitude));
