@@ -6,6 +6,18 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar Background="Sienna">
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:ConnectionId='1' Name="weatherButton" Icon="Emoji" Label="appbarbutton"
+                          Background="#c12315"                            
+                          
+                          />
+           
+        </CommandBar>
+    </Page.BottomAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid Background="#e4ef07">
@@ -19,13 +31,13 @@
                         HorizontalAlignment="Center"
                         Orientation="Vertical">
 
-                <TextBlock x:ConnectionId='2' x:Name="txtCity"
+                <TextBlock x:ConnectionId='7' x:Name="txtCity"
                            Text=""
                            FontWeight="SemiBold"
                            FontSize="30"
                            Foreground="White"
                            HorizontalAlignment="Center"/>
-                <TextBlock x:ConnectionId='3' x:Name="txtLastUpdate"
+                <TextBlock x:ConnectionId='8' x:Name="txtLastUpdate"
                            Text=""
                            FontWeight="SemiBold"
                            FontSize="14"
@@ -33,17 +45,53 @@
                            HorizontalAlignment="Center"/>
             </StackPanel>
 
-            <ProgressBar x:ConnectionId='1' x:Name="progressRing"
+            <ProgressBar x:ConnectionId='2' x:Name="progressBar"
                           Grid.Row="1"
-                          IsIndeterminate="True"
+                          IsIndeterminate="False"
                           Width="50" Height="50"
-                          Foreground="White"
+                          Foreground="Black"
                           HorizontalAlignment="Center"
                           VerticalAlignment="Center"
+                         
                           />
 
+            <Image x:ConnectionId='3' Grid.Row="1"
+                   x:Name="imgWeather"
+                   Stretch="Uniform"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+
+            <StackPanel Grid.Row="2" Orientation="Vertical"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        >
+
+                <TextBlock x:ConnectionId='4' x:Name="txtDescription"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="30"
+                           Foreground="Black"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:ConnectionId='5' x:Name="txtHumidity"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="30"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:ConnectionId='6' x:Name="txtTime"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="30"
+                           Foreground="White"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+           
         </Grid>
 
     </Grid>
+
+    
 </Page>
 

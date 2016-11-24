@@ -6,6 +6,18 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar Background="Sienna">
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton Name="weatherButton" Icon="Emoji" Label="appbarbutton"
+                          Background="#c12315" Click="weatherButton_Click"
+                          
+                          />
+           
+        </CommandBar>
+    </Page.BottomAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid Background="#e4ef07">
@@ -33,16 +45,52 @@
                            HorizontalAlignment="Center"/>
             </StackPanel>
 
-            <ProgressBar x:Name="progressRing"
+            <ProgressBar x:Name="progressBar"
                           Grid.Row="1"
-                          IsIndeterminate="True"
+                          IsIndeterminate="False"
                           Width="50" Height="50"
-                          Foreground="White"
+                          Foreground="Black"
                           HorizontalAlignment="Center"
                           VerticalAlignment="Center"
+                         
                           />
 
+            <Image Grid.Row="1"
+                   x:Name="imgWeather"
+                   Stretch="Uniform"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+
+            <StackPanel Grid.Row="2" Orientation="Vertical"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        >
+
+                <TextBlock x:Name="txtDescription"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="30"
+                           Foreground="Black"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:Name="txtHumidity"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="30"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:Name="txtTime"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="30"
+                           Foreground="White"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+           
         </Grid>
 
     </Grid>
+
+    
 </Page>

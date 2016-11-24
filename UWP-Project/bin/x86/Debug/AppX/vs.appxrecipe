@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>34B05133DF5C1D486E78BA20BB990E2A14EA37713D806FEA7644A05EBD234B4F</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>960FC5F43A6A40CBF936A6F7E9D46C5676D02FDE94C2B7F82E23F45168C3EE6A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e1d44ef0-b6d8-4fc6-a7df-8d369989327b_1.0.0.0_x86__dm7g00hxt8dat</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e1d44ef0-b6d8-4fc6-a7df-8d369989327b_dm7g00hxt8dat!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e1d44ef0-b6d8-4fc6-a7df-8d369989327b</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-24T16:29:46.246</Modified>
+      <Modified>2016-11-24T18:07:14.872</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\UWP-Project.exe">
       <PackagePath>entrypoint\UWP-Project.exe</PackagePath>
-      <Modified>2016-11-24T16:29:43.650</Modified>
+      <Modified>2016-11-24T18:07:09.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paddy\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -492,7 +492,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\UWP-Project.xr.xml">
       <PackagePath>UWP-Project.xr.xml</PackagePath>
-      <Modified>2016-11-24T16:29:42.595</Modified>
+      <Modified>2016-11-24T18:07:07.743</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -501,11 +501,11 @@
     <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-24T16:29:45.525</Modified>
+      <Modified>2016-11-24T18:07:12.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\Core\UWP-Project.exe">
       <PackagePath>UWP-Project.exe</PackagePath>
-      <Modified>2016-11-24T16:29:46.212</Modified>
+      <Modified>2016-11-24T18:07:14.814</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
