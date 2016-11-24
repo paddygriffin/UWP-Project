@@ -8,8 +8,8 @@ namespace UWP_Project.Model
 {
     public class Coord
     {
-        public double lon { get; set; }
-        public double lat { get; set; }
+        public double longitude { get; set; }
+        public double latitude { get; set; }
     }
 
     public class Weather
@@ -24,7 +24,7 @@ namespace UWP_Project.Model
     {
         public double temp { get; set; }
         public double pressure { get; set; }
-        public int humidity { get; set; }
+        public double humidity { get; set; }
         public double temp_min { get; set; }
         public double temp_max { get; set; }
         public double sea_level { get; set; }
