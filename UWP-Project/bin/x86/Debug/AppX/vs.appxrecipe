@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>e1d44ef0-b6d8-4fc6-a7df-8d369989327b</PackageIdentityName>
     <PackageIdentityPublisher>CN=paddy</PackageIdentityPublisher>
-    <IntermediateOutputPath>c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-24T18:07:14.872</Modified>
+      <Modified>2016-11-26T20:31:43.038</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\UWP-Project.exe">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\UWP-Project.exe">
       <PackagePath>entrypoint\UWP-Project.exe</PackagePath>
-      <Modified>2016-11-24T18:07:09.165</Modified>
+      <Modified>2016-11-26T20:31:41.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paddy\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -452,45 +452,45 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T22:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-11-24T10:53:01.355</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\UWP-Project.xr.xml">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\UWP-Project.xr.xml">
       <PackagePath>UWP-Project.xr.xml</PackagePath>
       <Modified>2016-11-24T18:07:07.743</Modified>
     </AppxPackagedFile>
@@ -498,14 +498,14 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-10-05T21:08:28.688</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-11-24T18:07:12.490</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\Core\UWP-Project.exe">
+    <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\Core\UWP-Project.exe">
       <PackagePath>UWP-Project.exe</PackagePath>
-      <Modified>2016-11-24T18:07:14.814</Modified>
+      <Modified>2016-11-26T20:31:43.012</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
