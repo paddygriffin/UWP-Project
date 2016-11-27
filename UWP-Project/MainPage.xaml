@@ -87,7 +87,14 @@
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
             </StackPanel>
-           
+            <TextBlock x:Name="txtCel"
+                       Grid.Row="3"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="30"
+                           Foreground="White"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center"/>
         </Grid>
 
     </Grid>

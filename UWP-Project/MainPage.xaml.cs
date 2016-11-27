@@ -63,7 +63,14 @@ namespace UWP_Project
                 //BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/{data.weather[0].icon}.png", UriKind.Absolute));
                 BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/10d.png", UriKind.Absolute));
                 imgWeather.Source = image;
+
+                txtDescription.Text = $"{data.weather[0].description}";
+                txtHumidity.Text = $"Humidity : {data.main.humidity}%";
+                txtTime.Text = $"{Common.APIclass.ConvertUnixTimeToDateTime(data.sys.sunrise).ToString("HH:mm")}/ {Common.APIclass.ConvertUnixTimeToDateTime(data.sys.sunset).ToString("HH:mm")}";
+                
+                txtCel.Text = $"{data.main.temp} °C";
             }
+            progressBar.IsIndeterminate = false;
         }
     }
 }

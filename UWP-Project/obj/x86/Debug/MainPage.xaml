@@ -31,13 +31,13 @@
                         HorizontalAlignment="Center"
                         Orientation="Vertical">
 
-                <TextBlock x:ConnectionId='7' x:Name="txtCity"
+                <TextBlock x:ConnectionId='8' x:Name="txtCity"
                            Text=""
                            FontWeight="SemiBold"
                            FontSize="30"
                            Foreground="White"
                            HorizontalAlignment="Center"/>
-                <TextBlock x:ConnectionId='8' x:Name="txtLastUpdate"
+                <TextBlock x:ConnectionId='9' x:Name="txtLastUpdate"
                            Text=""
                            FontWeight="SemiBold"
                            FontSize="14"
@@ -66,20 +66,20 @@
                         HorizontalAlignment="Center"
                         >
 
-                <TextBlock x:ConnectionId='4' x:Name="txtDescription"
+                <TextBlock x:ConnectionId='5' x:Name="txtDescription"
                            Text=""
                            FontWeight="SemiBold"
                            FontSize="30"
                            Foreground="Black"
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
-                <TextBlock x:ConnectionId='5' x:Name="txtHumidity"
+                <TextBlock x:ConnectionId='6' x:Name="txtHumidity"
                            Text=""
                            FontWeight="SemiBold"
                            FontSize="30"
                            Foreground="White"
                            HorizontalAlignment="Center"/>
-                <TextBlock x:ConnectionId='6' x:Name="txtTime"
+                <TextBlock x:ConnectionId='7' x:Name="txtTime"
                            Text=""
                            FontWeight="SemiBold"
                            FontSize="30"
@@ -87,7 +87,14 @@
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
             </StackPanel>
-           
+            <TextBlock x:ConnectionId='4' x:Name="txtCel"
+                       Grid.Row="3"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="30"
+                           Foreground="White"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center"/>
         </Grid>
 
     </Grid>

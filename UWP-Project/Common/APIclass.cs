@@ -21,6 +21,13 @@ namespace UWP_Project.Common
             return builder.ToString();
         }
 
+        public static DateTime ConvertUnixTimeToDateTime(double unix)
+        {
+            DateTime dt = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
+            dt = dt.AddSeconds(unix).ToLocalTime();
+            return dt;
+        }
+
 
     }
 }
