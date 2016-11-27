@@ -26,6 +26,7 @@ namespace UWP_Project
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        string Lat, Lng;
         public MainPage()
         {
             this.InitializeComponent();
@@ -43,14 +44,14 @@ namespace UWP_Project
 
         private async void weatherButton_Click(object sender, RoutedEventArgs e)
         {
-            progressBar.IsIndeterminate = true;
+            progressRing.IsActive = true;
             //add geo locators
 
             var geoLocator = new Geolocator();
             geoLocator.DesiredAccuracy = PositionAccuracy.High;
             Geoposition pos = await geoLocator.GetGeopositionAsync();
-            string Lat = pos.Coordinate.Point.Position.Latitude.ToString();
-            string Lng = pos.Coordinate.Point.Position.Longitude.ToString();
+             Lat = pos.Coordinate.Point.Position.Latitude.ToString();
+             Lng = pos.Coordinate.Point.Position.Longitude.ToString();
 
             var data = await Helper.Helper.GetWeather(Lat, Lng);
 
@@ -60,8 +61,8 @@ namespace UWP_Project
                 txtLastUpdate.Text = $"Last updated : {DateTime.Now.ToString("dd MMMM yyyy HH:mm")}";
                 //imgWeather from XAML needs to be sorted
                 //Its one of these
-                //BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/{data.weather[0].icon}.png", UriKind.Absolute));
-                BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/10d.png", UriKind.Absolute));
+                BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/{data.weather[0].icon}.png", UriKind.Absolute));
+               // BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/10d.png", UriKind.Absolute));
                 imgWeather.Source = image;
 
                 txtDescription.Text = $"{data.weather[0].description}";
@@ -70,7 +71,7 @@ namespace UWP_Project
                 
                 txtCel.Text = $"{data.main.temp} °C";
             }
-            progressBar.IsIndeterminate = false;
+            progressRing.IsActive = false;
         }
     }
 }

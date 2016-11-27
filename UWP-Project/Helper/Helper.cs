@@ -13,7 +13,7 @@ namespace UWP_Project.Helper
 {
     public class Helper
     {
-        public static async Task<WeatherAttributes> GetWeather(string latitude, string longitude)
+        public static async Task<WeatherAttributes> GetWeather(string lat, string lon)
         {
             //httpRequest 
             /*using (HttpClient client = new HttpClient())
@@ -22,7 +22,7 @@ namespace UWP_Project.Helper
              */
             using (var httpClient = new HttpClient())
             {
-                var response = await httpClient.GetAsync(Common.APIclass.APIAccess(latitude, longitude));
+                var response = await httpClient.GetAsync(Common.APIclass.APIAccess(lat, lon));
                 var resultText = await response.Content.ReadAsStringAsync();
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK) 
