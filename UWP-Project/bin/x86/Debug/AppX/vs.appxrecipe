@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>960FC5F43A6A40CBF936A6F7E9D46C5676D02FDE94C2B7F82E23F45168C3EE6A</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>39960F3FF2039FD1ADD8702AE8875BE79F72774602DC3157F7F03C25A4FC4497</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e1d44ef0-b6d8-4fc6-a7df-8d369989327b_1.0.0.0_x86__dm7g00hxt8dat</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e1d44ef0-b6d8-4fc6-a7df-8d369989327b_dm7g00hxt8dat!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e1d44ef0-b6d8-4fc6-a7df-8d369989327b</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-27T00:13:12.581</Modified>
+      <Modified>2016-11-27T00:29:46.916</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\UWP-Project.exe">
       <PackagePath>entrypoint\UWP-Project.exe</PackagePath>
-      <Modified>2016-11-27T00:13:04.917</Modified>
+      <Modified>2016-11-27T00:29:46.285</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paddy\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -501,11 +501,11 @@
     <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-27T00:13:11.548</Modified>
+      <Modified>2016-11-27T00:18:42.085</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paddy\documents\visual studio 2015\Projects\UWP-Project\UWP-Project\bin\x86\Debug\Core\UWP-Project.exe">
       <PackagePath>UWP-Project.exe</PackagePath>
-      <Modified>2016-11-27T00:13:12.548</Modified>
+      <Modified>2016-11-27T00:29:46.903</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
