@@ -57,22 +57,24 @@ namespace UWP_Project
 
             if (data != null)
             {
-                txtCity.Text = $"{data.name},{data.sys.country}";
-                txtLastUpdate.Text = $"Last updated : {DateTime.Now.ToString("dd MMMM yyyy HH:mm")}";
+                txtCity.Text = $"{data.name},{data.sys.country}"; //location name = area 
+                txtLastUpdate.Text = $"Last updated : {DateTime.Now.ToString("dd MMMM yyyy HH:mm")}"; // last updated 
                 //imgWeather from XAML needs to be sorted
                 //Its one of these
                // BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/{data.weather[0].icon}.png", UriKind.Absolute));
-               // BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/10d.png", UriKind.Absolute));
-               // imgWeather.Source = image; //this is passed to the grid on XAML
+                BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/10d.png", UriKind.Absolute));
+                imgWeather.Source = image; //this is passed to the grid on XAML
 
                 //"XAML Page text block name".Text = the WeatherAttributes
                 txtDescription.Text = $"{data.weather[0].description}";
                 txtHumidity.Text = $"Humidity : {data.main.humidity}%";
-                txtTime.Text = $"{Common.APIclass.ConvertUnixTimeToDateTime(data.sys.sunrise).ToString("HH:mm")}/ {Common.APIclass.ConvertUnixTimeToDateTime(data.sys.sunset).ToString("HH:mm")}";
+                //getting the time of the sunrise and sunset 
+                txtTime.Text = $"Sunrise/Sunset: {Common.APIclass.ConvertUnixTimeToDateTime(data.sys.sunrise).ToString("HH:mm")}/ {Common.APIclass.ConvertUnixTimeToDateTime(data.sys.sunset).ToString("HH:mm")}";
                 
-                txtCel.Text = $"{data.main.temp} °C";
-                windSpeed.Text = $"Wind:{data.wind.speed} km/h";
-                windDeg.Text = $"{data.wind.deg} degree direction";
+                txtCel.Text = $"Temperature: {data.main.temp} °C"; // temperature
+                windSpeed.Text = $"Wind: {data.wind.speed} km/h"; // speed of wind 
+                windDeg.Text = $"{data.wind.deg} degree direction";//direction of wind
+                
             }
             progressRing.IsActive = false; // deactivate the progress ring when close
         }

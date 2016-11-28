@@ -92,6 +92,7 @@
                            Foreground="Black"
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
+               
             </StackPanel>
             <TextBlock x:Name="txtCel"
                        Grid.Row="3"
