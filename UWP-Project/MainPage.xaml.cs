@@ -61,9 +61,9 @@ namespace UWP_Project
                 txtLastUpdate.Text = $"Last updated : {DateTime.Now.ToString("dd MMMM yyyy HH:mm")}";
                 //imgWeather from XAML needs to be sorted
                 //Its one of these
-                BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/{data.weather[0].icon}.png", UriKind.Absolute));
+                //BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/{data.weather[0].icon}.png", UriKind.Absolute));
                // BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/10d.png", UriKind.Absolute));
-                imgWeather.Source = image;
+               // imgWeather.Source = image;
 
                 txtDescription.Text = $"{data.weather[0].description}";
                 txtHumidity.Text = $"Humidity : {data.main.humidity}%";
