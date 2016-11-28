@@ -44,7 +44,7 @@ namespace UWP_Project
 
         private async void weatherButton_Click(object sender, RoutedEventArgs e)
         {
-            progressRing.IsActive = true;
+            progressRing.IsActive = true; //activate the progress ring while data loads
             //add geo locators
 
             var geoLocator = new Geolocator();
@@ -62,16 +62,19 @@ namespace UWP_Project
                 //imgWeather from XAML needs to be sorted
                 //Its one of these
                // BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/{data.weather[0].icon}.png", UriKind.Absolute));
-                BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/10d.png", UriKind.Absolute));
-                imgWeather.Source = image; //this is passed to the grid on XAML
+               // BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/10d.png", UriKind.Absolute));
+               // imgWeather.Source = image; //this is passed to the grid on XAML
 
+                //"XAML Page text block name".Text = the WeatherAttributes
                 txtDescription.Text = $"{data.weather[0].description}";
                 txtHumidity.Text = $"Humidity : {data.main.humidity}%";
                 txtTime.Text = $"{Common.APIclass.ConvertUnixTimeToDateTime(data.sys.sunrise).ToString("HH:mm")}/ {Common.APIclass.ConvertUnixTimeToDateTime(data.sys.sunset).ToString("HH:mm")}";
                 
                 txtCel.Text = $"{data.main.temp} °C";
+                windSpeed.Text = $"Wind:{data.wind.speed} km/h";
+                windDeg.Text = $"{data.wind.deg} degree direction";
             }
-            progressRing.IsActive = false;
+            progressRing.IsActive = false; // deactivate the progress ring when close
         }
     }
 }

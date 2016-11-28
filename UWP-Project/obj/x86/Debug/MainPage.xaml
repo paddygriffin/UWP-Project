@@ -17,18 +17,20 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
+                
+                
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" VerticalAlignment="Center"
                         HorizontalAlignment="Center"
                         Orientation="Vertical">
 
-                <TextBlock x:ConnectionId='7' x:Name="txtCity"
+                <TextBlock x:ConnectionId='9' x:Name="txtCity"
                            Text=""
                            FontWeight="SemiBold"
                            FontSize="30"
                            Foreground="White"
                            HorizontalAlignment="Center"/>
-                <TextBlock x:ConnectionId='8' x:Name="txtLastUpdate"
+                <TextBlock x:ConnectionId='10' x:Name="txtLastUpdate"
                            Text=""
                            FontWeight="SemiBold"
                            FontSize="14"
@@ -59,21 +61,35 @@
                 <TextBlock x:ConnectionId='4' x:Name="txtDescription"
                            Text=""
                            FontWeight="SemiBold"
-                           FontSize="30"
+                           FontSize="15"
                            Foreground="Black"
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
                 <TextBlock x:ConnectionId='5' x:Name="txtHumidity"
                            Text=""
                            FontWeight="SemiBold"
-                           FontSize="30"
+                           FontSize="15"
                            Foreground="White"
                            HorizontalAlignment="Center"/>
                 <TextBlock x:ConnectionId='6' x:Name="txtTime"
                            Text=""
                            FontWeight="SemiBold"
-                           FontSize="30"
+                           FontSize="15"
                            Foreground="White"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:ConnectionId='7' x:Name="windSpeed"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="15"
+                           Foreground="Black"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:ConnectionId='8' x:Name="windDeg"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="15"
+                           Foreground="Black"
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
             </StackPanel>
@@ -92,7 +108,7 @@
     <Page.BottomAppBar>
         <CommandBar ClosedDisplayMode="Compact" Background="Sienna">
             
-            <AppBarButton x:ConnectionId='9' Name="weatherButton" Icon="Emoji" Label="GET WEATHER"
+            <AppBarButton x:ConnectionId='11' Name="weatherButton" Icon="Emoji" Label="GET WEATHER"
                           Background="#c12315"                            
                           
                           />

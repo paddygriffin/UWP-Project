@@ -17,6 +17,8 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
+                
+                
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" VerticalAlignment="Center"
                         HorizontalAlignment="Center"
@@ -59,21 +61,35 @@
                 <TextBlock x:Name="txtDescription"
                            Text=""
                            FontWeight="SemiBold"
-                           FontSize="30"
+                           FontSize="15"
                            Foreground="Black"
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
                 <TextBlock x:Name="txtHumidity"
                            Text=""
                            FontWeight="SemiBold"
-                           FontSize="30"
+                           FontSize="15"
                            Foreground="White"
                            HorizontalAlignment="Center"/>
                 <TextBlock x:Name="txtTime"
                            Text=""
                            FontWeight="SemiBold"
-                           FontSize="30"
+                           FontSize="15"
                            Foreground="White"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:Name="windSpeed"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="15"
+                           Foreground="Black"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                <TextBlock x:Name="windDeg"
+                           Text=""
+                           FontWeight="SemiBold"
+                           FontSize="15"
+                           Foreground="Black"
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
             </StackPanel>
