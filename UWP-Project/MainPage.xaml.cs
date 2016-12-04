@@ -45,14 +45,16 @@ namespace UWP_Project
         private async void weatherButton_Click(object sender, RoutedEventArgs e)
         {
             progressRing.IsActive = true; //activate the progress ring while data loads
-            //add geo locators
+            
 
-            var geoLocator = new Geolocator();
-            geoLocator.DesiredAccuracy = PositionAccuracy.High;
-            Geoposition pos = await geoLocator.GetGeopositionAsync();
-             Lat = pos.Coordinate.Point.Position.Latitude.ToString();
-             Lng = pos.Coordinate.Point.Position.Longitude.ToString();
-
+            // adapted from-http://stackoverflow.com/questions/24238373/geolocation-in-c-sharp
+            var geoLocator = new Geolocator(); //Create object
+            geoLocator.DesiredAccuracy = PositionAccuracy.High; //Add accuracy
+            Geoposition pos = await geoLocator.GetGeopositionAsync();//async operation to get current location
+            Lat = pos.Coordinate.Point.Position.Latitude.ToString(); //
+            Lng = pos.Coordinate.Point.Position.Longitude.ToString();
+     
+           
             var data = await Helper.Helper.GetWeather(Lat, Lng);
 
             if (data != null)

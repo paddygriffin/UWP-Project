@@ -20,6 +20,7 @@ namespace UWP_Project.Helper
             using (HttpResponseMessage response = await client.GetAsync(page)) ;
             
              */
+            //https://www.dotnetperls.com/httpclient - Adapted from here
             using (var httpClient = new HttpClient())
             {
                 var response = await httpClient.GetAsync(Common.APIclass.APIAccess(lat, lon));

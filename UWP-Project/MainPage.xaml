@@ -6,19 +6,25 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-   
+
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-       
-        
-        <Grid Background="#e4ef07">
+
+
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF017395" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
-                
-                
+
+
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" VerticalAlignment="Center"
                         HorizontalAlignment="Center"
@@ -61,38 +67,38 @@
                 <TextBlock x:Name="txtDescription"
                            Text=""
                            FontWeight="SemiBold"
-                           FontSize="15"
+                           FontSize="20"
                            Foreground="Black"
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
                 <TextBlock x:Name="txtHumidity"
                            Text=""
                            FontWeight="SemiBold"
-                           FontSize="15"
+                           FontSize="20"
                            Foreground="White"
                            HorizontalAlignment="Center"/>
                 <TextBlock x:Name="txtTime"
                            Text=""
                            FontWeight="SemiBold"
-                           FontSize="15"
+                           FontSize="20"
                            Foreground="White"
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
                 <TextBlock x:Name="windSpeed"
                            Text=""
                            FontWeight="SemiBold"
-                           FontSize="15"
+                           FontSize="20"
                            Foreground="Black"
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
                 <TextBlock x:Name="windDeg"
                            Text=""
                            FontWeight="SemiBold"
-                           FontSize="15"
+                           FontSize="20"
                            Foreground="Black"
                            TextAlignment="Center"
                            HorizontalAlignment="Center"/>
-               
+
             </StackPanel>
             <TextBlock x:Name="txtCel"
                        Grid.Row="3"
@@ -107,14 +113,14 @@
     </Grid>
 
     <Page.BottomAppBar>
-        <CommandBar ClosedDisplayMode="Compact" Background="Sienna">
-            
-            <AppBarButton Name="weatherButton" Icon="Emoji" Label="GET WEATHER"
-                          Background="#c12315" Click="weatherButton_Click"
+        <CommandBar ClosedDisplayMode="Compact" Background="Black">
+
+            <AppBarButton Name="weatherButton" Label="GET WEATHER"
+                          Background="#FFECDFDE" Click="weatherButton_Click" Icon="World"
                           
                           />
 
         </CommandBar>
     </Page.BottomAppBar>
-    
+
 </Page>
