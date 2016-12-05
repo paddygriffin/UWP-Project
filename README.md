@@ -116,3 +116,8 @@ I then converted this to C# and you can see in my mainpage.xaml.cs how i incorpo
 - https://www.dotnetperls.com/httpclient accessing online
 - http://www.wpftutorial.net/gridlayout.html  XAML code assitance
 - http://stackoverflow.com/questions/24238373/geolocation-in-c-sharp geolocation
+- [Channel9 Tutorial for weather app](https://channel9.msdn.com/Series/Windows-10-development-for-absolute-beginners/UWP-058-UWP-Weather-Setup-and-Working-with-the-Weather-API)
+- https://www.dotnetperls.com/httpclient for httpClient
+- http://stackoverflow.com/questions/24238373/geolocation-in-c-sharp - for geolocation
+- http://stackoverflow.com/questions/249760/how-to-convert-a-unix-timestamp-to-datetime-and-vice-versa - for timestamp
+- https://msdn.microsoft.com/en-us/library/aa970269(v=vs.110).aspx - bitmap image
