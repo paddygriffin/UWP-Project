@@ -21,6 +21,7 @@ namespace UWP_Project.Common
             return builder.ToString();
         }
 
+        //adapted from- http://stackoverflow.com/questions/249760/how-to-convert-a-unix-timestamp-to-datetime-and-vice-versa
         public static DateTime ConvertUnixTimeToDateTime(double unix)
         {
             DateTime dt = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);

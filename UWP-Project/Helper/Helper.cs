@@ -21,10 +21,11 @@ namespace UWP_Project.Helper
             
              */
             //https://www.dotnetperls.com/httpclient - Adapted from here
-            using (var httpClient = new HttpClient())
+
+            using (var httpClient = new HttpClient()) // using HttpClient initialize a new instance
             {
-                var response = await httpClient.GetAsync(Common.APIclass.APIAccess(lat, lon));
-                var resultText = await response.Content.ReadAsStringAsync();
+                var response = await httpClient.GetAsync(Common.APIclass.APIAccess(lat, lon)); //result that wants to be displayed by GET request
+                var resultText = await response.Content.ReadAsStringAsync(); //sets the content of the response message
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK) 
                 {
@@ -33,7 +34,7 @@ namespace UWP_Project.Helper
                         var users = JsonConvert.DeserializeObject<WeatherAttributes>(resultText); //Newtonsoft.Json that we installed
                         return users;
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
                         Debug.WriteLine(resultText);
                         return null;

@@ -26,7 +26,7 @@ namespace UWP_Project
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        string Lat, Lng;
+        string Lat, Lng; //variables 
         public MainPage()
         {
             this.InitializeComponent();
@@ -51,20 +51,19 @@ namespace UWP_Project
             var geoLocator = new Geolocator(); //Create object
             geoLocator.DesiredAccuracy = PositionAccuracy.High; //Add accuracy
             Geoposition pos = await geoLocator.GetGeopositionAsync();//async operation to get current location
-            Lat = pos.Coordinate.Point.Position.Latitude.ToString(); //
-            Lng = pos.Coordinate.Point.Position.Longitude.ToString();
+            Lat = pos.Coordinate.Point.Position.Latitude.ToString(); //getting location for lat
+            Lng = pos.Coordinate.Point.Position.Longitude.ToString();//getting location for lng
      
            
-            var data = await Helper.Helper.GetWeather(Lat, Lng);
+            var data = await Helper.Helper.GetWeather(Lat, Lng); //getting data from the http client
 
             if (data != null)
             {
                 txtCity.Text = $"{data.name},{data.sys.country}"; //location name = area 
                 txtLastUpdate.Text = $"Last updated : {DateTime.Now.ToString("dd MMMM yyyy HH:mm")}"; // last updated 
-                //imgWeather from XAML needs to be sorted
-                //Its one of these
-               // BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/{data.weather[0].icon}.png", UriKind.Absolute));
-                BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/10d.png", UriKind.Absolute));
+
+                //adapted https://msdn.microsoft.com/en-us/library/aa970269(v=vs.110).aspx
+                BitmapImage image = new BitmapImage(new Uri($"http://openweathermap.org/img/w/10d.png", UriKind.Absolute));//Initializes a new instance of the BitmapImage class by using the supplied Uri.
                 imgWeather.Source = image; //this is passed to the grid on XAML
 
                 //"XAML Page text block name".Text = the WeatherAttributes
